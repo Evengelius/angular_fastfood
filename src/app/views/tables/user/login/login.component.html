@@ -1,0 +1,32 @@
+<!-- Default form register -->
+<div class="container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">User | Login</p>
+
+        <!-- Username -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && loginForm.controls.username.errors }"
+                   class="form-control" formControlName="username" id="username"
+                   placeholder="Username" type="text"/>
+            <div *ngIf="submitted && loginForm.controls.username.errors" class="text-danger">
+                <div *ngIf="loginForm.controls.username.errors.required">Username is required</div>
+                <div *ngIf="loginForm.controls.username.errors.minlength">At least 3 characters</div>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && loginForm.controls.password.errors }" class="form-control"
+                   formControlName="password" id="password"
+                   placeholder="Password" type="password"/>
+            <div *ngIf="submitted && loginForm.controls.password.errors" class="text-danger">
+                <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+            </div>
+        </div>
+
+        <!-- Sign up button -->
+        <button class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form register -->

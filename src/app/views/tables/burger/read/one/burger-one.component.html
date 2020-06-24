@@ -1,0 +1,42 @@
+<div *ngIf='burger'
+     class='card'>
+    <div class='card-header'>
+        {{title + ': ' + burger.name}}
+    </div>
+
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md'>
+                <div class='row'>
+                    <div class='col-md-4'>Name:</div>
+                    <div class='col-md-8'>{{burger.name}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Price:</div>
+                    <div class='col-md-8'>{{burger.price}}&euro;</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Description:</div>
+                    <div class='col-md-8'>{{burger.description}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Recipe:</div>
+                    <div class='col-md-8'>{{burger.recipe}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Quantity:</div>
+                    <div class='col-md-8'>{{burger.quantity}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='card-footer'>
+        <button (click)='delete()'
+                class='btn btn-outline-danger'
+                style='width:80px; float: right'>Delete
+        </button>
+    </div>
+</div>
+

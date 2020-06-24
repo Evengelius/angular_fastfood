@@ -1,0 +1,71 @@
+<!-- Editable table -->
+<br/><br/>
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Commands | All</h3>
+    <div class="card-body">
+        <div id="table" class="table-editable">
+            <span class="md-form float-left">
+                <input mdbInput type="text" [(ngModel)]="listFilter" name="text" id="form1" class="form-control">
+                <label for="form1" class="">Filtering by name</label>
+            </span>
+            <span class="table-add float-right mb-3 mr-2">
+                <a routerLink="create" class="text-success">
+                    <mdb-icon fas icon="plus"></mdb-icon>
+                </a>
+            </span>
+            <table class="table table-bordered table-responsive-md table-striped text-center"
+                   *ngIf="commands && commands.length; else elseBlock">
+                <tr>
+                    <th class="text-center">Lastname</th>
+                    <th class="text-center">Firstname</th>
+                    <th class="text-center">Login</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Address</th>
+                    <th class="text-center">Postal Code</th>
+                    <th class="text-center">Street</th>
+                    <th class="text-center">View</th>
+                    <th class="text-center">Edit</th>
+                </tr>
+                <tr *ngFor="let command of filteredCommand | paginate: {id: 'commands_data', itemsPerPage: 2, currentPage: currentPage, totalItems: totalRecords}; let i = index;">
+                    <td>{{command.lastName}}</td>
+                    <td>{{command.firstName}}</td>
+                    <td>{{command.login}}</td>
+                    <td>{{command.email}}</td>
+                    <td>{{command.address}}</td>
+                    <td>{{command.postalCode}}</td>
+                    <td>{{command.street}}</td>
+                    <td>
+                        <span class="table-up">
+                            <a [routerLink]="['show', command.id]" class="text-primary">
+                                <mdb-icon fas icon="eye"></mdb-icon>
+                            </a>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="table-up">
+                            <a [routerLink]="['edit', command.id]" class="indigo-text">
+                                <mdb-icon fas icon="edit"></mdb-icon>
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr *ngIf="!filteredCommand.length && listFilter.length">
+                    <td colspan="10">No data found</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div class="flex-center">
+            <span class="font-weight-bold text-uppercase py-4" style="position: relative; top: 45px; right: 80px;">No more data</span>
+        </div>
+    </ng-template>
+    <nav aria-label="Page navigation example" class="flex-center">
+        <div>
+            <pagination-controls id="commands_data" class="pagination pg-blue" maxSize="5" directionLinks="true"
+                                 (pageChange)="currentPage = $event"></pagination-controls>
+        </div>
+    </nav>
+</div>
+<br/><br/>
+<!-- Editable table -->

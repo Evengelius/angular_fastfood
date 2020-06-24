@@ -1,0 +1,39 @@
+<!-- Default form Update -->
+<div class="container">
+    <form (ngSubmit)="update(burgerForm.value)" [formGroup]="burgerForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Burger | Editing</p>
+
+        <!-- Name -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="name" id="name" placeholder="Name" type="text"/>
+        </div>
+
+        <!-- Price -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="price" id="price" placeholder="Price" type="text"/>
+        </div>
+
+        <!-- Description -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="description" id="description" placeholder="Description"
+                   type="text"/>
+        </div>
+
+        <!-- Recipe -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="recipe" id="recipe" placeholder="Recipe" type="text"/>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="quantity" id="quantity" min="0" placeholder="Quantity"
+                   type="number"/>
+        </div>
+
+        <!-- Update button -->
+        <button [disabled]="burgerForm.invalid" class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form Update -->
+

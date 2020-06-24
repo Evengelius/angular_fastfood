@@ -1,0 +1,115 @@
+<!-- Default form register -->
+<div class="container">
+    <form (ngSubmit)="add()" [formGroup]="commandForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Command | Adding</p>
+
+        <div class="form-row mb-4">
+            <div class="col">
+                <!-- First name -->
+                <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.firstName.errors }"
+                       class="form-control" formControlName="firstName" id="firstName"
+                       placeholder="First name" type="text"/>
+                <div *ngIf="submitted && commandForm.controls.firstName.errors" class="text-danger">
+                    <div *ngIf="commandForm.controls.firstName.errors.required">Firstname is required</div>
+                    <div *ngIf="commandForm.controls.firstName.errors.minlength">At least 2 characters</div>
+                    <div *ngIf="commandForm.controls.firstName.errors['onlyLetters']">Only letters</div>
+                    <div *ngIf="commandForm.controls.firstName.errors['noWhiteSpace']">White space is forbidden</div>
+                </div>
+            </div>
+            <div class="col">
+                <!-- Last name -->
+                <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.lastName.errors }"
+                       class="form-control" formControlName="lastName" id="lastName" placeholder="Last name"
+                       type="text"/>
+                <div *ngIf="submitted && commandForm.controls.lastName.errors" class="text-danger">
+                    <div *ngIf="commandForm.controls.lastName.errors.required">Lastname is required</div>
+                    <div *ngIf="commandForm.controls.lastName.errors.minlength">At least 2 characters</div>
+                    <div *ngIf="commandForm.controls.lastName.errors['onlyLetters']">Only letters</div>
+                    <div *ngIf="commandForm.controls.lastName.errors['noWhiteSpace']">White space is forbidden</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.login.errors }" class="form-control"
+                   formControlName="login" id="login" placeholder="Login"
+                   type="text"/>
+            <div *ngIf="submitted && commandForm.controls.login.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.login.errors.required">Login is required</div>
+                <div *ngIf="commandForm.controls.login.errors.minlength">At least 5 characters</div>
+                <div *ngIf="commandForm.controls.login.errors.maxlength">No more than 10 characters</div>
+                <div *ngIf="commandForm.controls.login.errors['onlyLetters']">Only letters</div>
+                <div *ngIf="commandForm.controls.login.errors['noWhiteSpace']">White space is forbidden</div>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.password.errors }" class="form-control"
+                   formControlName="password" id="password"
+                   placeholder="Password" type="password"/>
+            <div *ngIf="submitted && commandForm.controls.password.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.password.errors.required">Password is required</div>
+            </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.confirmPassword.errors }" class="form-control"
+                   formControlName="confirmPassword" id="confirmPassword"
+                   placeholder="Confirm Password" type="password"/>
+            <div *ngIf="submitted && commandForm.controls.confirmPassword.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.confirmPassword.errors.required">Please confirm your password</div>
+                <div *ngIf="commandForm.controls.confirmPassword.errors.mustMatch">Both password don't match</div>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.email.errors }" class="form-control"
+                   formControlName="email" id="email" placeholder="E-mail"
+                   type="email"/>
+            <div *ngIf="submitted && commandForm.controls.email.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.email.errors.required">E-mail is required</div>
+                <div *ngIf="commandForm.controls.email.errors.email">Please provide a valid email address</div>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.address.errors }" class="form-control"
+                   formControlName="address" id="address" placeholder="Address"
+                   type="text"/>
+            <div *ngIf="submitted && commandForm.controls.address.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.address.errors.required">Address is required</div>
+            </div>
+        </div>
+
+        <!-- Postal Code -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.postalCode.errors }"
+                   class="form-control" formControlName="postalCode" id="postalCode"
+                   placeholder="Postal-Code" type="text"/>
+            <div *ngIf="submitted && commandForm.controls.postalCode.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.postalCode.errors.required || commandForm.controls.postalCode.errors['onlyDigit']">Postal Code is required | Only Digits</div>
+            </div>
+        </div>
+
+        <!-- Street-->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && commandForm.controls.street.errors }" class="form-control"
+                   formControlName="street" id="street" placeholder="Street"
+                   type="text"/>
+            <div *ngIf="submitted && commandForm.controls.street.errors" class="text-danger">
+                <div *ngIf="commandForm.controls.street.errors.required">Street name is required</div>
+                <div *ngIf="commandForm.controls.street.errors['onlyLetters']">Only letters</div>
+            </div>
+        </div>
+
+        <!-- Sign up button -->
+        <button class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form register -->

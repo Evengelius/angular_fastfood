@@ -1,0 +1,67 @@
+<!-- Default form register -->
+<div class="container">
+    <form (ngSubmit)="add()" [formGroup]="burgerForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Burger | Adding</p>
+
+
+        <!-- Name -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && burgerForm.controls.name.errors }"
+                   class="form-control" formControlName="name" id="name"
+                   placeholder="Name" type="text"/>
+            <div *ngIf="submitted && burgerForm.controls.name.errors" class="text-danger">
+                <div *ngIf="burgerForm.controls.name.errors.required">Name is required</div>
+                <div *ngIf="burgerForm.controls.name.errors.minlength">At least 3 characters</div>
+            </div>
+        </div>
+
+        <!-- Price -->
+        <div class="form-row mb-4">
+            <input
+                    [ngClass]="{ 'is-invalid': submitted && burgerForm.controls.price.errors }" class="form-control"
+                    formControlName="price" id="price"
+                    placeholder="Price" type="text"/>
+            <div *ngIf="submitted && burgerForm.controls.price.errors" class="text-danger">
+                <div *ngIf="burgerForm.controls.price.errors.required">Price is required</div>
+                <div *ngIf="burgerForm.controls.price.errors.pattern">An SQL decimal(4,2) is required</div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && burgerForm.controls.description.errors }"
+                   class="form-control"
+                   formControlName="description" id="description" placeholder="Description"
+                   type="text"/>
+            <div *ngIf="submitted && burgerForm.controls.description.errors" class="text-danger">
+                <div *ngIf="burgerForm.controls.description.errors.required">Description is required</div>
+                <div *ngIf="burgerForm.controls.description.errors.minlength">At least 3 characters</div>
+            </div>
+        </div>
+
+        <!-- Recipe-->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && burgerForm.controls.recipe.errors }" class="form-control"
+                   formControlName="recipe" id="recipe" placeholder="Recipe"
+                   type="text"/>
+            <div *ngIf="submitted && burgerForm.controls.recipe.errors" class="text-danger">
+                <div *ngIf="burgerForm.controls.recipe.errors.required">Recipe is required</div>
+            </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && burgerForm.controls.quantity.errors }"
+                   class="form-control" formControlName="quantity" id="quantity" min="0"
+                   placeholder="Quantity" type="number"/>
+            <div *ngIf="submitted && burgerForm.controls.quantity.errors" class="text-danger">
+                <div *ngIf="burgerForm.controls.quantity.errors.required">Quantity is required</div>
+            </div>
+        </div>
+
+        <!-- Sign up button -->
+        <button class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form register -->

@@ -1,0 +1,38 @@
+<div *ngIf='user'
+     class='card'>
+    <div class='card-header'>
+        {{title + ': ' + user.name}}
+    </div>
+
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md'>
+                <div class='row'>
+                    <div class='col-md-4'>Name:</div>
+                    <div class='col-md-8'>{{user.name}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Price:</div>
+                    <div class='col-md-8'>{{user.firstname}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Description:</div>
+                    <div class='col-md-8'>{{user.username}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Calories:</div>
+                    <div class='col-md-8'>{{user.email}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='card-footer'>
+        <button (click)='delete()'
+                class='btn btn-outline-danger'
+                style='width:80px; float: right'>Delete
+        </button>
+    </div>
+</div>
+

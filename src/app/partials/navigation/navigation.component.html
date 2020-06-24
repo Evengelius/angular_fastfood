@@ -1,0 +1,98 @@
+<!--Main Navigation-->
+<header>
+
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white" [containerInside]="false">
+
+        <!-- Navbar brand -->
+        <logo class="ml-3">
+            <a class="navbar-brand" href="#">
+                <strong class="blue-text">Fast-Food</strong>
+            </a>
+        </logo>
+
+        <!-- Collapsible content -->
+        <links>
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" hidden>
+                    <a class="nav-link">Home
+                    </a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+            <!-- Search form -->
+            <ul class="navbar-nav nav-flex-icons">
+
+                <!-- Register -->
+                <li *ngIf="!userService.isAuthenticated()" class="nav-item">
+                    <a [title]="register" class="ml-1 nav-link"
+                                          routerLink="register" mdbWavesEffect>
+                        <mdb-icon fas icon="user-plus"></mdb-icon>
+                    </a>
+                </li>
+                <!-- Register -->
+                <li *ngIf="!userService.isAuthenticated()" class="nav-item">
+                    <a [title]="login" class="ml-1 nav-link"
+                                       routerLink="login" mdbWavesEffect>
+                        <mdb-icon fas icon="sign-in-alt"></mdb-icon>
+                    </a>
+                </li>
+                <!-- Logout -->
+                <li *ngIf="userService.isAuthenticated()" class="nav-item">
+                    <a (click)="signOut()" [routerLink]="" [title]="login" class="ml-1 nav-link" mdbWavesEffect>
+                        <mdb-icon fas icon="sign-out-alt"></mdb-icon>
+                    </a>
+                </li>
+            </ul>
+        </links>
+        <!-- Collapsible content -->
+
+    </mdb-navbar>
+    <!--/.Navbar-->
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+        <a class="logo-wrapper waves-effect">
+            <img alt="" class="img-fluid" src="../../../../assets/img/angular-mdb.png">
+        </a>
+
+        <div class="list-group list-group-flush">
+
+            <a class="list-group-item list-group-item-action waves-effect" routerLink="commands"
+               routerLinkActive="active">
+                <mdb-icon class="mr-3" fas icon="table"></mdb-icon>
+                Commands
+            </a>
+            <a class="list-group-item list-group-item-action waves-effect" routerLink="drinks"
+               routerLinkActive="active">
+                <mdb-icon class="mr-3" fas icon="table"></mdb-icon>
+                Boissons
+            </a>
+            <a class="list-group-item list-group-item-action waves-effect" routerLink="burgers"
+               routerLinkActive="active">
+                <mdb-icon class="mr-3" fas icon="table"></mdb-icon>
+                Burgers
+            </a>
+            <a class="list-group-item list-group-item-action waves-effect" routerLink="users"
+               routerLinkActive="active">
+                <mdb-icon class="mr-3" fas icon="table"></mdb-icon>
+                Users
+            </a>
+            <!--
+                <a routerLink="nonExistingPath" routerLinkActive="active"
+                   class="list-group-item list-group-item-action waves-effect">
+                    <mdb-icon fas icon="exclamation" class="mr-3"></mdb-icon>
+                    404
+                </a>
+            -->
+
+        </div>
+
+    </div>
+    <!-- Sidebar -->
+</header>
+<!--Main Navigation-->

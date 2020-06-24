@@ -1,0 +1,39 @@
+<!-- Default form Update -->
+<div class="container">
+    <form (ngSubmit)="update(drinkForm.value)" [formGroup]="drinkForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Drink | Editing</p>
+
+        <!-- Name -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="name" id="name" placeholder="Name" type="text"/>
+        </div>
+
+        <!-- Price -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="price" id="price" placeholder="Price" type="text"/>
+        </div>
+
+        <!-- Description -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="description" id="description" placeholder="Description"
+                   type="text"/>
+        </div>
+
+        <!-- Calories -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="calories" id="calories" min="0" placeholder="Calories" type="number"/>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="quantity" id="quantity" min="0" placeholder="Quantity"
+                   type="number"/>
+        </div>
+
+        <!-- Update button -->
+        <button [disabled]="drinkForm.invalid" class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form Update -->
+

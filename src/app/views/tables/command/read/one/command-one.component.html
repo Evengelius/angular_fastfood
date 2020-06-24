@@ -1,0 +1,50 @@
+<div *ngIf='command'
+     class='card'>
+    <div class='card-header'>
+        {{title + ': ' + command.firstName}}
+    </div>
+
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md'>
+                <div class='row'>
+                    <div class='col-md-4'>Lastname:</div>
+                    <div class='col-md-8'>{{command.lastName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Firstname:</div>
+                    <div class='col-md-8'>{{command.firstName}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Login:</div>
+                    <div class='col-md-8'>{{command.login}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>email:</div>
+                    <div class='col-md-8'>{{command.email}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Address:</div>
+                    <div class='col-md-8'>{{command.address}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Postal Code:</div>
+                    <div class='col-md-8'>{{command.postalCode}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>Street:</div>
+                    <div class='col-md-8'>{{command.street}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='card-footer'>
+        <button (click)='delete()'
+                class='btn btn-outline-danger'
+                style='width:80px; float: right'>Delete
+        </button>
+    </div>
+</div>
+

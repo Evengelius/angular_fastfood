@@ -1,0 +1,67 @@
+<!-- Default form register -->
+<div class="container">
+    <form (ngSubmit)="add()" [formGroup]="drinkForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Drink | Adding</p>
+
+
+        <!-- Name -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && drinkForm.controls.name.errors }"
+                   class="form-control" formControlName="name" id="name"
+                   placeholder="Name" type="text"/>
+            <div *ngIf="submitted && drinkForm.controls.name.errors" class="text-danger">
+                <div *ngIf="drinkForm.controls.name.errors.required">Name is required</div>
+                <div *ngIf="drinkForm.controls.name.errors.minlength">At least 3 characters</div>
+            </div>
+        </div>
+
+        <!-- Price -->
+        <div class="form-row mb-4">
+            <input
+                    [ngClass]="{ 'is-invalid': submitted && drinkForm.controls.price.errors }" class="form-control"
+                    formControlName="price" id="price"
+                    placeholder="Price" type="text"/>
+            <div *ngIf="submitted && drinkForm.controls.price.errors" class="text-danger">
+                <div *ngIf="drinkForm.controls.price.errors.required">Price is required</div>
+                <div *ngIf="drinkForm.controls.price.errors.pattern">An SQL decimal(4,2) is required</div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && drinkForm.controls.description.errors }"
+                   class="form-control"
+                   formControlName="description" id="description" placeholder="Description"
+                   type="text"/>
+            <div *ngIf="submitted && drinkForm.controls.description.errors" class="text-danger">
+                <div *ngIf="drinkForm.controls.description.errors.required">Description is required</div>
+                <div *ngIf="drinkForm.controls.description.errors.minlength">At least 3 characters</div>
+            </div>
+        </div>
+
+        <!-- Calories -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && drinkForm.controls.calories.errors }" class="form-control"
+                   formControlName="calories" id="calories" min="0" placeholder="Calories"
+                   type="number"/>
+            <div *ngIf="submitted && drinkForm.controls.calories.errors" class="text-danger">
+                <div *ngIf="drinkForm.controls.calories.errors.required">Calories is required</div>
+            </div>
+        </div>
+
+        <!-- Quantity -->
+        <div class="form-row mb-4">
+            <input [ngClass]="{ 'is-invalid': submitted && drinkForm.controls.quantity.errors }"
+                   class="form-control" formControlName="quantity" id="quantity" min="0"
+                   placeholder="Quantity" type="number"/>
+            <div *ngIf="submitted && drinkForm.controls.quantity.errors" class="text-danger">
+                <div *ngIf="drinkForm.controls.quantity.errors.required">Quantity is required</div>
+            </div>
+        </div>
+
+        <!-- Sign up button -->
+        <button class="my-4" color="info" mdbBtn type="submit">Submit</button>
+    </form>
+</div>
+<!-- Default form register -->

@@ -1,0 +1,48 @@
+<!-- Default form Update -->
+<div class="container">
+    <form (ngSubmit)="update(commandForm.value)" [formGroup]="commandForm" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Command | Editing</p>
+
+        <div class="form-row mb-4">
+            <div class="col">
+                <!-- First name -->
+                <input class="form-control" formControlName="firstName" id="firstName" placeholder="First name" type="text"/>
+            </div>
+            <div class="col">
+                <!-- Last name -->
+                <input class="form-control" formControlName="lastName" id="lastName" placeholder="Last name" type="text"/>
+            </div>
+        </div>
+
+        <!-- Login -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="login" id="login" placeholder="Login" type="text"/>
+        </div>
+
+        <!-- Email -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="email" id="email" placeholder="E-mail" type="email"/>
+        </div>
+
+        <!-- Address -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="address" id="address" placeholder="Address" type="text"/>
+        </div>
+
+        <!-- Postal Code -->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="postalCode" id="postalCode" placeholder="Postal-Code" type="text"/>
+        </div>
+
+        <!-- Street-->
+        <div class="form-row mb-4">
+            <input class="form-control" formControlName="street" id="street" placeholder="Street" type="text"/>
+        </div>
+
+        <!-- Update button -->
+        <button class="my-4" color="info" mdbBtn type="submit" [disabled]="commandForm.invalid">Submit</button>
+    </form>
+</div>
+<!-- Default form Update -->
+
