@@ -4,7 +4,7 @@
 
 # Angular | Fast-Food
 
-This is a fast-food application
+This is a fast-food application.
 
 
 ## Getting Started
@@ -23,21 +23,22 @@ Angular takes care of everything on the back end | client side.
 1. git clone https://github.com/Evengelius/angular_fastfood.git your_desired_name
 2. cd your_desired_name
 3. npm install
+4. Test it | Make sure to have your Spring application running.
 ```
 
 ## Functionnalities
 
 **HttpClient**<br />
-Processing HTTP requests made with SpringBoot
+Processing HTTP requests made with SpringBoot.
 
 **Authentication and validation management**<br />
-Angular Interceptor & JSON Web Token | Angular Validation
+Angular Interceptor & JSON Web Token | Angular Validation.
 
 **Animation management**<br />
-Angular Animations | Fade in / out transition made on each page change
+Angular Animations | Fade in / out transition made on each page change.
   
 **Authorization management**<br />
-Angular Route Guards
+Angular Route Guards.
 
 
 ## Screenshots | Demo
