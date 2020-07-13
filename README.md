@@ -23,7 +23,7 @@ Angular takes care of everything on the back end | client side.
 1. git clone https://github.com/Evengelius/angular_fastfood.git your_desired_name
 2. cd your_desired_name
 3. npm install
-4. Test it | Make sure to have your Spring application running.
+4. Test it | Make sure to keep your Spring application running.
 ```
 
 ## Functionnalities
