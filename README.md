@@ -1,4 +1,4 @@
-[![Material Design for Bootstrap](https://www.zupimages.net/up/20/29/h4pu.png)](https://angular.io)
+[![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/03/admin-angular.png)](https://angular.io)
 
 -----------------------------------------------------
 
