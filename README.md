@@ -13,6 +13,12 @@ Angular takes care of everything on the back end | client side.
 
 ### Installing
 
+[Php](your-project-name/tree/master/your-subfolder)
+[Spring](your-project-name/tree/master/your-subfolder)
+[Angular](your-project-name/tree/master/your-subfolder)
+
+-----------------------------------------------------
+
 ```
 1. git clone https://github.com/Evengelius/angular_fastfood.git your_desired_name
 2. cd your_desired_name
