@@ -36,7 +36,7 @@ Angular Route Guards
 
 ## Screenshots | Demo
 
-**Login**
+**Authentication | Login**
 
 ![Authentication | Login](https://www.zupimages.net/up/20/29/jpvg.png)
 
