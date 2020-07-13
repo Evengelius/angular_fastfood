@@ -11,13 +11,13 @@ This is a fast-food application
 
 Angular takes care of everything on the back end | client side.
 
-### Installing
+<ins>Please make sure to download in order as follow</ins> : 
 
 [Php](your-project-name/tree/master/your-subfolder)<br />
 [Spring](your-project-name/tree/master/your-subfolder)<br />
 [Angular](your-project-name/tree/master/your-subfolder)<br />
 
------------------------------------------------------
+### Installing
 
 ```
 1. git clone https://github.com/Evengelius/angular_fastfood.git your_desired_name
