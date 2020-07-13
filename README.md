@@ -1,4 +1,4 @@
-[![Material Design for Bootstrap](https://angular.io/assets/images/logos/angular/angular.svg)](https://angular.io)
+[![Material Design for Bootstrap](https://www.zupimages.net/up/20/29/h4pu.png)](https://angular.io)
 
 -----------------------------------------------------
 
