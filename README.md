@@ -47,3 +47,9 @@ Angular Route Guards
 **Angular | Web Storage**
 
 ![Angular | Web Storage](https://www.zupimages.net/up/20/29/0m47.png)
+
+Once authenticated, the credentials are stored in the web storage.
+
+**JWT | Details**
+
+![JWT | Details](https://www.zupimages.net/up/20/29/b2jr.png)
