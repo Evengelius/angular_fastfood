@@ -13,9 +13,9 @@ Angular takes care of everything on the back end | client side.
 
 ### Installing
 
-[Php](your-project-name/tree/master/your-subfolder)
-[Spring](your-project-name/tree/master/your-subfolder)
-[Angular](your-project-name/tree/master/your-subfolder)
+[Php](your-project-name/tree/master/your-subfolder)<br />
+[Spring](your-project-name/tree/master/your-subfolder)<br />
+[Angular](your-project-name/tree/master/your-subfolder)<br />
 
 -----------------------------------------------------
 
