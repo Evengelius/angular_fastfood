@@ -38,12 +38,12 @@ Angular Route Guards
 
 **Login**
 
-![Authentication | Login](https://zupimages.net/viewer.php?id=20/29/jpvg.png)
+![Authentication | Login](https://www.zupimages.net/up/20/29/jpvg.png)
 
 **Auhenticated | JWT generated**
 
-![Authenticated | JWT generated](https://zupimages.net/viewer.php?id=20/29/u22d.png)
+![Authenticated | JWT generated](https://www.zupimages.net/up/20/29/u22d.png)
 
 **Angular | Web Storage**
 
-![Angular | Web Storage](https://zupimages.net/viewer.php?id=20/29/0m47.png)
+![Angular | Web Storage](https://www.zupimages.net/up/20/29/0m47.png)
