@@ -36,19 +36,14 @@ Angular Route Guards
 
 ## Screenshots | Demo
 
-**Registration**
+**Login**
 
-![Authentication | Register](https://image.noelshack.com/fichiers/2020/29/1/1594596785-jwt-spring.png)
+![Authentication | Login](https://zupimages.net/viewer.php?id=20/29/jpvg.png)
 
-**Hibernate | Query**
+**Auhenticated | JWT generated**
 
-![Hibernate | Query](https://www.zupimages.net/up/20/29/9jud.png)
+![Authenticated | JWT generated](https://zupimages.net/viewer.php?id=20/29/u22d.png)
 
-**Login | JWT generated**
+**Angular | Web Storage**
 
-![Authentication | Login](https://image.noelshack.com/fichiers/2020/29/1/1594596785-jwt-spring-login.png)
-
-**Authenticated | Show Endpoint**
-
-![Authentication | Authenticated](https://image.noelshack.com/fichiers/2020/29/1/1594596785-jwt-spring-authenticated.png)
-
+![Angular | Web Storage](https://zupimages.net/viewer.php?id=20/29/0m47.png)
