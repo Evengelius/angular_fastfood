@@ -21,17 +21,17 @@ Angular takes care of everything on the back end | client side.
 
 ## Functionnalities
 
-**HttpClient**
+**HttpClient**<br />
 Processing HTTP requests made with SpringBoot
 
-**Authentication and validation management**
+**Authentication and validation management**<br />
 Angular Interceptor & JSON Web Token | Angular Validation
 
-**Animation management**
-Angular Animations
+**Animation management**<br />
+Angular Animations<br />
   Fade in / out transition made on each page change
   
-**Authorization management**
+**Authorization management**<br />
 Angular Route Guards
 
 
