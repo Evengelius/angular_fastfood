@@ -13,9 +13,9 @@ Angular takes care of everything on the back end | client side.
 
 <ins>Before going further, please make sure you have processed the repositories in order as follow</ins> : 
 
-1. [Php](your-project-name/tree/master/your-subfolder)<br />
-2. [Spring](your-project-name/tree/master/your-subfolder)<br />
-3. [Angular](your-project-name/tree/master/your-subfolder)<br />
+* [Php](https://github.com/Evengelius/php_fastfood)<br />
+* [Spring](https://github.com/Evengelius/spring_fastfood)<br />
+* [Angular](https://github.com/Evengelius/angular_fastfood)<br />
 
 ### Installing
 
