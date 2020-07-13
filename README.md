@@ -28,8 +28,7 @@ Processing HTTP requests made with SpringBoot
 Angular Interceptor & JSON Web Token | Angular Validation
 
 **Animation management**<br />
-Angular Animations<br />
-  Fade in / out transition made on each page change
+Angular Animations | Fade in / out transition made on each page change
   
 **Authorization management**<br />
 Angular Route Guards
