@@ -11,7 +11,7 @@ This is a fast-food application
 
 Angular takes care of everything on the back end | client side.
 
-<ins>Please make sure to download in order as follow</ins> : 
+<ins>Before going further, please make sure you have processed the repositories as follow</ins> : 
 
 [Php](your-project-name/tree/master/your-subfolder)<br />
 [Spring](your-project-name/tree/master/your-subfolder)<br />
