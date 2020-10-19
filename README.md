@@ -47,7 +47,7 @@ Angular Route Guards.
 
 ![Authentication | Login](https://www.zupimages.net/up/20/29/jpvg.png)
 
-**Auhenticated | JWT generated**
+**Authenticated | JWT generated**
 
 ![Authenticated | JWT generated](https://www.zupimages.net/up/20/29/u22d.png)
 
